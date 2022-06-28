@@ -1,0 +1,270 @@
+
+@font-face {
+    font-family: "voyage";
+    src: url(Voyage-Regular.ttf);
+@font-face {
+    font-family: "kobeweb";
+    src: url(KobeWeb-Regular.ttf);
+*{padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+#main{
+    scroll-snap-type: y mandatory;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#pg1{
+    position: relative;
+    scroll-snap-align: start;
+    width: 100%;
+    height:100%;
+    #upload{
+        font-size: 18px;
+        font-weight: 800;
+        top: 20%;
+        position: absolute;
+        right: 16%;
+    }
+    h1{
+        top: 35%;
+        left: 20%;
+        position: absolute;
+        font-family: "voyage";
+        // font-family: 'Playfair Display', serif;
+        font-size: 250px;  
+        letter-spacing: -5px;
+        z-index: 2;
+    }
+    #circle{
+        z-index: 1;
+        top: 40%;
+        right: 35%;
+        position: absolute;
+        background-color: rgb(255, 238, 0);
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+    }
+    #text{
+        right: 15%;
+        top: 80%;
+        position: absolute;
+        font-family: "kobeweb";
+        font-size: 15px;
+    }
+}
+
+#pg2{
+    scroll-snap-align: end;
+
+    width: 100%;
+    height: 80%;
+    position: relative;
+    img{
+        position: absolute;
+        left: 20%;
+        top: 0;
+        transform: rotate(-45deg);
+        width: 40%;
+    }
+    h1{
+        // background-color: red;
+        overflow: hidden;
+        position: absolute;
+        top: -15%;
+        z-index: -1;
+        left: -10%;
+        font-size: 550px;
+        color: rgb(255, 238, 0) ;
+        font-family: "kobeweb";
+    }
+    h1 span{
+        // background-color: pink;
+        display: inline-block;
+        transform: translateY(0%);
+    }
+}
+#pg3{
+    scroll-snap-align: end;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    #client{
+        
+        font-family: "kobeweb";
+        top: 2%;
+        right: 10%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        h4,h1,h3{
+            margin: 5px;
+        }
+    }
+    #work{
+        // font-family: 'Playfair Display', serif;
+        h1{
+            font-size: 260px;
+            letter-spacing: -5px;
+            position: absolute;
+            top:40%;
+            overflow: hidden;
+            left: 20%;
+            display: flex;
+            align-items: center;
+        }
+        h1 span{
+            // display: inline-block;
+        }
+    }
+    #txt{
+        position: absolute;
+        bottom: 5%;
+        right: 25%;
+        h4{
+            font-family: "kobeweb";
+            font-size: 15px;
+            overflow: hidden;
+        }
+        h4 span{
+            transform-origin: -100%;
+            display: inline-block;
+            transform: translateY(0%);
+        }
+    }
+    #goal{
+        z-index: -1;
+        position: absolute;
+        right:-10%;
+        bottom:-110%;
+        
+        width: 1300px;
+        height: 1300px;
+        background-color: rgb(255, 238, 0);
+        border-radius: 50%;
+    }
+}
+#pg4{
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: end;
+    position: relative;
+    #location{
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
+        h4{
+            margin-bottom: 10px;
+        }
+    }
+    #slide::-webkit-scrollbar {
+        display: none;
+    }
+    #slide{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        left: 20%;
+        top: 20%;
+        align-items: center;
+        height: 600px;
+        overflow-y: auto;
+        scrollbar-width: none;
+        #img{
+            flex: none;
+            width: 600px;
+            height: 400px;
+            position: relative;
+            margin: 15px;
+            transition: 0.5s;
+            &:hover{
+                transform: scale(1.1) rotate(-5deg);
+            }
+            h2{
+                position: absolute;
+                top: 5%;
+                left: 5%;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+#pg5{
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: end;
+    position:relative;
+    #touch{
+        h1{
+            top: 5%;
+            transform: translate(25%,30%);
+            left: 20%;
+            overflow: hidden;
+            font-size: 170px;
+        }
+        h1 span{
+            display: inline-block;
+        }
+    }
+    #circ{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 250px;
+        height: 250px;
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    #content{
+        position: absolute;
+        font-family: "kobeweb";
+        font-size: 15px;
+        bottom: 32%;
+        right: 17%;
+        h4{
+            overflow: hidden;
+        }
+        h4 span{
+            transform-origin: -50%;
+            display: inline-block;
+        }
+    }
+    #line{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        width: 85%;
+        height: 2px;
+        bottom: 10%;
+        left: 50%;
+        margin: 30px 0px;
+        background-color: rgba(80, 80, 80, 0.514);
+        
+    }
+    #contact{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        bottom: 0;
+        #social{
+            text-align: right;
+        }
+    }
+}
+}
+}
